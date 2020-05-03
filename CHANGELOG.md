@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.11.1-RC2 (2020/03/22)
+
+* SSMTP: Add support for non-STARTTLS connections (#38)
+
+## 0.11.1-RC1 (2020/01/18)
+
+* Fail2ban 0.11.1
+
+> :warning: **UPGRADE NOTES**
+> `F2B_BACKEND`, `F2B_MAX_RETRY`, `F2B_MAX_MATCHES`, `F2B_DEST_EMAIL`, `F2B_SENDER`, `F2B_ACTION` env vars have been removed.
+> You must now use them through the global jail configuration. See [README](README.md#global-jail-configuration) for more info.
+
+## 0.10.5-RC1 (2020/01/17)
+
+* Fail2ban 0.10.5
+* Add nftables support
+* Add `F2B_MAX_MATCHES` env var
+* Alpine Linux 3.11
+
+## 0.10.4-RC13 (2019/12/07)
+
+* Fix timezone
+
+## 0.10.4-RC12 (2019/10/03)
+
+* Multi-platform Docker image
+* Switch to GitHub Actions
+* :warning: Stop publishing Docker image on Quay
+* Set timezone through tzdata
+
 ## 0.10.4-RC11 (2019/09/16)
 
 * Only populate AuthUser/Pass in ssmtp.conf if defined in ENV (PR #28)
